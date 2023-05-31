@@ -16,13 +16,13 @@ import { BrowserRouter, Routes, Route, NavLink, Outlet
       <h3>Welcome to my page!</h3>
       <nav>
         <NavLink 
-         style={({isActive}) => isActive ? activeStyle : null}
+         style={({isActive}) => isActive ? 'my-link' : null}
         to="/">Home</NavLink>
         <NavLink 
-         style={({isActive}) => isActive ? activeStyle : null }
+         style={({isActive}) => isActive ? 'my-link' : null }
         to="about">About</NavLink>
         <NavLink 
-         style={({isActive}) => isActive ? activeStyle : null }
+         style={({isActive}) => isActive ? 'my-link' : null }
         to="contact">Contact</NavLink>
       </nav>
       <Outlet />
